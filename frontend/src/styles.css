@@ -1,0 +1,1113 @@
+/* 🔹 Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Estilização do corpo */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+/* 🔹 Filtros */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-btn,
+.btn-cadastro,
+.clear-btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.filter-btn {
+  background: #007bff;
+  color: white;
+}
+
+.clear-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-cadastro {
+  background: #28a745;
+  color: white;
+}
+
+/* 🔹 Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* 🔹 Botão Salvar */
+.btn-salvar {
+  background: #28a745;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-salvar:hover {
+  background: #218838;
+}
+
+/* 🔹 Modo escuro */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #2a2a2a;
+}
+
+.dark-mode thead {
+  background: #343a40;
+}
+
+.dark-mode tbody tr:hover {
+  background: #444;
+}
+/* 🔹 Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Estilização do Corpo */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+/* 🔹 Container Geral */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+/* 🔹 Botão Voltar */
+.btn-voltar {
+  background: #6c757d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #5a6268;
+}
+
+/* 🔹 Formulário */
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 🔹 Botão Cadastrar */
+.btn-cadastrar {
+  grid-column: span 2;
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background: #218838;
+}
+
+/* 🔹 Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* 🔹 Botão Excluir */
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-excluir:hover {
+  background: #c82333;
+}
+
+/* 🔹 Modo Escuro */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #2a2a2a;
+}
+
+.dark-mode thead {
+  background: #343a40;
+}
+
+.dark-mode tbody tr:hover {
+  background: #444;
+}
+/* 🔹 Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Estilização do Corpo */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+/* 🔹 Container Geral */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+/* 🔹 Botão Voltar */
+.btn-voltar {
+  background: #6c757d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #5a6268;
+}
+
+/* 🔹 Formulário */
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 🔹 Botão Cadastrar e Editar */
+.btn-cadastrar {
+  grid-column: span 2;
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background: #218838;
+}
+
+/* 🔹 Botão Cancelar Edição */
+.btn-cancelar {
+  grid-column: span 2;
+  background: #ffc107;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-cancelar:hover {
+  background: #e0a800;
+}
+
+/* 🔹 Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* 🔹 Botão Excluir */
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-excluir:hover {
+  background: #c82333;
+}
+
+/* 🔹 Botão Editar */
+.btn-editar {
+  background: #17a2b8;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-editar:hover {
+  background: #138496;
+}
+
+/* 🔹 Modo Escuro */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #2a2a2a;
+}
+
+.dark-mode thead {
+  background: #343a40;
+}
+
+.dark-mode tbody tr:hover {
+  background: #444;
+}
+/* 🔹 Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Container */
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Barra de Pesquisa */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-left: 10px;
+}
+
+/* 🔹 Botão Editar */
+.btn-editar {
+  background: #17a2b8;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-editar:hover {
+  background: #138496;
+}
+
+/* 🔹 Botão Excluir */
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-excluir:hover {
+  background: #c82333;
+}
+.navbar {
+  background-color: #007bff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd57;
+}
+/* 🔹 Container principal */
+.container {
+  max-width: 90%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Títulos */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Barra de Filtros */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* 🔹 Checkbox de filtro */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-label input {
+  margin-right: 8px;
+}
+
+/* 🔹 Estilização da Tabela */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr.estocado {
+  background-color: #e9f5e9;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+
+/* 🔹 Botões */
+.btn-estocar {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn-estocar:hover {
+  background: #218838;
+}
+
+.tag-estocado {
+  font-size: 14px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* 🔹 Paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.pagination button:hover {
+  background: #0056b3;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* 🔹 Input da páginação */
+.pagina-input-form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagina-input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-ir {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-ir:hover {
+  background: #218838;
+}
+/* 🔹 Estilo para os campos editáveis de Quantidade e Localização */
+.input-editavel {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 🔹 Destaque ao clicar no input */
+.input-editavel:focus {
+  background-color: white;
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.4);
+}
+
+/* 🔹 Ajustes na tabela para manter alinhamento */
+.table-container table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* 🔹 Estilo do botão "Estocar" */
+.btn-estocar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-estocar:hover {
+  background-color: #218838;
+}
+
+/* 🔹 Estilo do texto "Estocado" */
+.tag-estocado {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* 🔹 Ajuste para melhorar a visualização na tabela */
+th, td {
+  padding: 8px;
+}
+.estoque-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.input-busca {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.estoque-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.estoque-table th, .estoque-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.estoque-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.paginacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.paginacao button {
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.paginacao button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* Melhorando a exibição do status */
+.status-header {
+  width: 150px; /* 🔹 Aumenta o tamanho da coluna "Status" */
+  text-align: center;
+}
+
+.status {
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.status.contado {
+  background-color: #28a745;
+  color: white;
+}
+
+.status.pendente {
+  background-color: #dc3545;
+  color: white;
+}
+/* Melhorando a exibição do status */
+.status-header {
+  width: 150px; /* 🔹 Aumenta o tamanho da coluna "Status" */
+  text-align: center;
+}
+
+.status-dropdown {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-dropdown.contado {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-dropdown.pendente {
+  background-color: #dc3545;
+  color: white;
+}
+/* Melhorando a exibição do status */
+.status-header {
+  width: 150px;
+  text-align: center;
+}
+
+.status-dropdown {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-dropdown.contado {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-dropdown.pendente {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Ajustando a Data de Contagem */
+td:nth-child(13) {
+  text-align: center;
+  font-weight: bold;
+}
+/* 🔹 Estilização da Paginação */
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pagination-controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls .page-input {
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.pagination-controls span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+/* 🔹 Estilo Geral */
+.container {
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Título */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 🔹 Barra de Filtros */
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #555;
+}
+
+.status-filter {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* 🔹 Estilização da Paginação */
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-controls button {
+  padding: 5px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.page-input {
+  width: 40px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 🔹 Tabela */
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+/* 🔹 Inputs Editáveis */
+.input-editavel {
+  width: 90%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* 🔹 Status Dropdown */
+.status-dropdown {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+
+.status-dropdown.contado {
+  background: #28a745;
+  color: white;
+}
+
+.status-dropdown.pendente {
+  background: #dc3545;
+  color: white;
+}
+
+/* 🔹 Linhas destacadas */
+.linha-contada {
+  background: #e6ffe6; /* Verde claro */
+}
+
+/* 🔹 Última coluna (Status) */
+.status-header {
+  width: 120px;
+}

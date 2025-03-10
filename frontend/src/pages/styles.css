@@ -1,0 +1,567 @@
+/* 🔹 Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Estilização do corpo */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+/* 🔹 Filtros */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-btn,
+.btn-cadastro,
+.clear-btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.filter-btn {
+  background: #007bff;
+  color: white;
+}
+
+.clear-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-cadastro {
+  background: #28a745;
+  color: white;
+}
+
+/* 🔹 Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* 🔹 Botão Salvar */
+.btn-salvar {
+  background: #28a745;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-salvar:hover {
+  background: #218838;
+}
+
+/* 🔹 Modo escuro */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #2a2a2a;
+}
+
+.dark-mode thead {
+  background: #343a40;
+}
+
+.dark-mode tbody tr:hover {
+  background: #444;
+}
+/* 🔹 Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Estilização do Corpo */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+/* 🔹 Container Geral */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+/* 🔹 Botão Voltar */
+.btn-voltar {
+  background: #6c757d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #5a6268;
+}
+
+/* 🔹 Formulário */
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 🔹 Botão Cadastrar */
+.btn-cadastrar {
+  grid-column: span 2;
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background: #218838;
+}
+
+/* 🔹 Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* 🔹 Botão Excluir */
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-excluir:hover {
+  background: #c82333;
+}
+
+/* 🔹 Modo Escuro */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #2a2a2a;
+}
+
+.dark-mode thead {
+  background: #343a40;
+}
+
+.dark-mode tbody tr:hover {
+  background: #444;
+}
+/* 🔹 Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Estilização do Corpo */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+/* 🔹 Container Geral */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+/* 🔹 Botão Voltar */
+.btn-voltar {
+  background: #6c757d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #5a6268;
+}
+
+/* 🔹 Formulário */
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 🔹 Botão Cadastrar e Editar */
+.btn-cadastrar {
+  grid-column: span 2;
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background: #218838;
+}
+
+/* 🔹 Botão Cancelar Edição */
+.btn-cancelar {
+  grid-column: span 2;
+  background: #ffc107;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-cancelar:hover {
+  background: #e0a800;
+}
+
+/* 🔹 Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* 🔹 Botão Excluir */
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-excluir:hover {
+  background: #c82333;
+}
+
+/* 🔹 Botão Editar */
+.btn-editar {
+  background: #17a2b8;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-editar:hover {
+  background: #138496;
+}
+
+/* 🔹 Modo Escuro */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #2a2a2a;
+}
+
+.dark-mode thead {
+  background: #343a40;
+}
+
+.dark-mode tbody tr:hover {
+  background: #444;
+}
+/* 🔹 Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Container */
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Barra de Pesquisa */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-left: 10px;
+}
+
+/* 🔹 Botão Editar */
+.btn-editar {
+  background: #17a2b8;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-editar:hover {
+  background: #138496;
+}
+
+/* 🔹 Botão Excluir */
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-excluir:hover {
+  background: #c82333;
+}
+.navbar {
+  background-color: #007bff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd57;
+}

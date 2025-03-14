@@ -11,20 +11,20 @@ app.use(express.json());
 // 🔹 Conectar ao Supabase
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
-// 🔹 Configurar conexão com a API do Google Sheets
+// 🔹 Configurar conexão com a API do Google Sheets usando variáveis de ambiente
 const auth = new google.auth.GoogleAuth({
-  keyFile: "credentials.json", // 🔹 Arquivo de credenciais do Google
+  credentials: JSON.parse(process.env.GOOGLE_CREDENTIALS), // 🔹 Credenciais como string JSON na variável de ambiente
   scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
 });
 
 const sheets = google.sheets({ version: "v4", auth });
 
-// 🔹 Rota para sincronizar os dados da planilha com o banco
+// 🔹 Rota para sincronizar os dados da planilha com o Supabase
 app.get("/sincronizar", async (req, res) => {
   try {
     const response = await sheets.spreadsheets.values.get({
-      spreadsheetId: "1kl2JWBTyo86cWLFWYBV3lusxyog-aZP0uaDx4uzlKRI", // 🔹 Substitua pelo ID da sua planilha
-      range: "Carimbo Estoque!A2:H", // 🔹 Ajuste conforme sua planilha
+      spreadsheetId: process.env.SPREADSHEET_ID, // 🔹 Agora usando variável de ambiente
+      range: "Carimbo Estoque!A2:H",
     });
 
     const rows = response.data.values;
@@ -33,28 +33,34 @@ app.get("/sincronizar", async (req, res) => {
     }
 
     // 🔹 Transformar os dados e enviar para o Supabase
-    for (const row of rows) {
-      const [dataHora, nome, quantidade, referencia, lote, embalagem, risco, classificacao] = row;
+    const dadosParaInserir = rows.map((row) => ({
+      dataHora: row[0],
+      nome: row[1],
+      quantidade: row[2] || 0,
+      referencia: row[3] || "Sem referência",
+      lote: row[4] || "Sem lote",
+      embalagem: row[5] || "Sem embalagem",
+      risco: row[6] || "Desconhecido",
+      classificacao: row[7] || "Sem classificação",
+    }));
 
-      // 🔹 Inserir no Supabase
-      const { error } = await supabase
-        .from("Estoque")
-        .upsert([{ nome, quantidade, referencia, lote, embalagem, risco, classificacao }]);
+    const { error } = await supabase.from("Estoque").upsert(dadosParaInserir);
+    if (error) throw error;
 
-      if (error) {
-        console.error("Erro ao inserir no Supabase:", error);
-      }
-    }
-
-    res.send("Sincronização concluída com sucesso!");
+    res.send("✅ Sincronização concluída com sucesso!");
   } catch (error) {
     console.error("Erro ao buscar dados do Google Sheets:", error);
-    res.status(500).send("Erro ao sincronizar.");
+    res.status(500).send("❌ Erro ao sincronizar.");
   }
 });
 
-// 🔹 Iniciar o servidor
-const PORT = 3001;
+// 🔹 Rota de teste
+app.get("/", (req, res) => {
+  res.send("✅ API rodando com sucesso!");
+});
+
+// 🔹 Iniciar o servidor na porta correta
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`✅ API rodando em http://localhost:${PORT}`);
+  console.log(`✅ API rodando na porta ${PORT}`);
 });
